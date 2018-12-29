@@ -1,3 +1,5 @@
+puts "arrays are enclosed with []"
+puts " a new empty array is array.new[]"
 array = [2, 4, ["a", "b"], 7, 4, 'c']
 array.length
 puts array
@@ -29,3 +31,5 @@ puts array
 
 puts "array.shift removes first item in an array #{array.shift}"
 puts array
+
+puts array = []

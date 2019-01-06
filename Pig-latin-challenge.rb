@@ -8,7 +8,7 @@
 # add first letters to end of word
 # add -ay to end of word
 
-  puts '-' * 22
+puts '-' * 22
 puts '|   Pig Latin Game   |'
 puts '-' * 22
 puts ''

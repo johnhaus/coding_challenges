@@ -14,3 +14,12 @@ puts '----------'
 pig = Animal.new({noise: 'Oink!'})
 # pig.noise = 'Oink!'
 puts pig.noise
+
+puts '----------'
+
+Animal.types.each do |type|
+  puts type
+end
+
+wilbur = Animal.create_a_pig
+puts wilbur.noise

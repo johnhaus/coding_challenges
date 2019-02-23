@@ -1,11 +1,19 @@
 class Animal
 
-  attr_accessor :noise
+  attr_accessor :noise, :color
 
-  def initialize(options={})
+  def initialize(options={}) # set up empty options hash
     @noise = options[:noise] || 'Grrr'
-    # or use self.noise = some stuff
-    puts 'New animal instantiated'
+    # if no noise provided, will use 'Grrr' as default noise
+    @color = options[:color] || 'white'
+  end
+
+  def self.types
+    ['pig', 'cow', 'duck']
+  end
+
+  def self.create_a_pig #class method to create a pig
+    Animal.new(noise: 'Oink!', color: 'pink')
   end
 
   # same as attr_writer and attr_reader

@@ -21,6 +21,12 @@ class Animal
     @@species
   end
 
+  def self.species=(array)
+    # class writer method- writes new array for @@species
+    return unless array.is_a?(Array)
+    @@species = array
+  end
+
   def self.total_animals
     @@total_animals
   end
